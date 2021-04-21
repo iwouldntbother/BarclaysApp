@@ -5,6 +5,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif;
+    background: var(--lightBlue);
 }
 
 :root {
@@ -34,7 +35,7 @@ body {
     height: 100%;
     background-image: url("/images/Barclays-logo.png");
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
@@ -43,7 +44,6 @@ body {
 
 #mainBodyContainer {
     width: 100vw;
-        height: 100vh;
     background: var(--grey1);
 }
 
@@ -52,7 +52,7 @@ body {
 .bodySection {
     width: 100vw;
     height: 60vh;
-    background: coral;
+    /* background: coral; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -61,7 +61,7 @@ body {
 .bodySectionTall {
     width: 100vw;
     height: 90vh;
-    background: coral;
+    /* background: coral; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;

@@ -1,0 +1,91 @@
+/* General */
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --lightBlue: #00aeef;
+    --darkBlue: #00395d;
+    --grey0: #f1f3f8;
+    --grey1: #d6e0f0;
+    --grey2: #8d93ab;
+    --grey3: #393b44;
+}
+
+/* Top Bar */
+
+#topBar {
+    width: 100vw;
+    height: 8vh;
+    background: var(--darkBlue);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#backBTN {
+    width: 8vh;
+    height: 100%;
+    background: orange;
+}
+
+#menuLogo {
+    width: 40vw;
+    height: 100%;
+    background: orange;
+    background-image: url("/images/Barclays-logo.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#menuBTN {
+    width: 8vh;
+    height: 100%;
+    background: orange;
+}
+
+/* Main Body */
+
+#bodyContainer {
+    width: 100vw;
+    height: 92vh;
+    min-height: -webkit-fill-available;
+    background: orangered;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+#buttonHolder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+#buttonHolder .BTN {
+    width: 25vw;
+    height: 25vw;
+    background: var(--lightBlue);
+    z-index: 1;
+    border-radius: 15px;
+}
+
+#buttonHolder #selectedBG {
+    position: absolute;
+    width: 28vw;
+    height: 28vw;
+    background: var(--grey2);
+    border-radius: 15px;
+}
