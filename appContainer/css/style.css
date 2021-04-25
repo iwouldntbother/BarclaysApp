@@ -284,3 +284,130 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+/* 0002 */
+
+.title0002 {
+    font-size: 6vw;
+    margin: 0;
+    margin-left: 5vw;
+}
+
+#walletHolder0002 {
+    width: 90vw;
+    height: 65vw;
+    background: var(--lightBlue);
+    margin-left: 5vw;
+    border-radius: 25px;
+}
+
+#actionsTitle0002 {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 5vw;
+}
+
+.titleBTN0002 {
+    color: var(--lightBlue);
+    margin: 0;
+}
+
+#transactionsTitle0002 {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 5vw;
+}
+
+#actionsHolder0002 {
+    width: 100vw;
+    max-height: 30vh;
+    padding-left: 2.5vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.action0002 {
+    width: 28vw;
+    height: 28vw;
+    border-radius: 25px;
+    background: var(--lightBlue);
+    margin-left: 2.5vw;
+    margin-bottom: 2.5vw;
+}
+
+#transactionsHolder0002 {
+    width: 90vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 25px;
+    margin: 0 5vw;
+    overflow: scroll;
+}
+
+.transaction0002 {
+    width: 90vw;
+    height: 10vw;
+    /* background: var(--lightBlue); */
+    padding: 0 7vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #ddd solid 0.2vh;
+}
+
+.transactionName0002 {
+    font-size: 3.5vw;
+    margin: 0;
+    font-weight: 600;
+}
+
+.transactionDate0002 {
+    font-size: 2.5vw;
+    margin: 0;
+    font-weight: 500;
+}
+
+.transactionAmount0002 {
+    font-size: 4vw;
+    margin: 0;
+    font-weight: 600;
+}
+
+#tabBarHolder0002 {
+    width: 90vw;
+    height: 8vh;
+    margin-left: 5vw;
+    /* background: var(--lightBlue); */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#contactsBTN0002 {
+    width: 12vw;
+    height: 12vw;
+    background: violet;
+}
+
+#analyticsBTN0002 {
+    width: 12vw;
+    height: 12vw;
+    background: violet;
+}
+
+#settingsBTN0002 {
+    width: 12vw;
+    height: 12vw;
+    background: violet;
+}
