@@ -89,15 +89,19 @@ body {
 
 #statusBarTime {
     color: white;
-    width: 20vw;
+    width: 25vw;
     text-align: center;
     font-weight: 500;
 }
 
 #statusBarIcons {
-    background: blueviolet;
     width: 20vw;
     height: 5vh;
+    margin-right: 3vw;
+    background-image: url("/images/statusBarIcons.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 /* Main Body */
@@ -296,16 +300,78 @@ body {
 #walletHolder0002 {
     width: 90vw;
     height: 65vw;
-    background: var(--lightBlue);
+    background: linear-gradient(90deg, rgba(0,72,255,1) 0%, rgba(0,174,239,1) 100%);
     margin-left: 5vw;
     border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#walletLogoBar0002 {
+    width: 90vw;
+    height: 15vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#barclaysLogo0002 {
+    width: 11vw;
+    height: 11vw;
+    margin: 2vw;
+    background-image: url("/images/Barclays-logo-Icon-white.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#visaLogo0002 {
+    width: 18vw;
+    height: 13vw;
+    margin: 5vw;
+    background-image: url("/images/Visa_logo.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#walletBalance0002 {
+    font-size: 8vw;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+    margin-top: 2vh;
+}
+
+#walletBalance0002::before {
+    content: "£";
+}
+
+#walletDetails0002 {
+    width: 40vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 3.5vw;
+    font-weight: 500;
+    color: white;
+}
+
+#cardNo0002::before {
+    content: "...";
+}
+
+#expDate0002::before {
+    content: "EXP. ";
 }
 
 #actionsTitle0002 {
     width: 100vw;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
     padding-right: 5vw;
 }
@@ -313,13 +379,15 @@ body {
 .titleBTN0002 {
     color: var(--lightBlue);
     margin: 0;
+    font-size: 3.5vw;
+    font-weight: 500;
 }
 
 #transactionsTitle0002 {
     width: 100vw;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
     padding-right: 5vw;
 }
@@ -395,19 +463,28 @@ body {
 }
 
 #contactsBTN0002 {
-    width: 12vw;
-    height: 12vw;
-    background: violet;
+    width: 8vw;
+    height: 8vw;
+    background-image: url("/images/contactsIcon.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #analyticsBTN0002 {
-    width: 12vw;
-    height: 12vw;
-    background: violet;
+    width: 8vw;
+    height: 8vw;
+    background-image: url("/images/analyticsIcon.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #settingsBTN0002 {
-    width: 12vw;
-    height: 12vw;
-    background: violet;
+    width: 8vw;
+    height: 8vw;
+    background-image: url("/images/settingsIcon.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
