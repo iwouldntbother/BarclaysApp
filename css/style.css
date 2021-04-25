@@ -166,3 +166,17 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+.iframeContainer {
+    height: 80vh;
+    width: 37vh;
+    max-width: 90vw;
+}
+
+/* Footer */
+
+#footerContainer {
+    width: 100vw;
+    height: 15vh;
+    background: var(--grey3);
+}

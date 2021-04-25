@@ -1,9 +1,16 @@
+/* Fonts */
+
+    /* Poppins */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 /* General */
 
 body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    font-family: "Poppins", sans-serif;
+    background: #222;
 }
 
 * {
@@ -19,22 +26,35 @@ body {
     --grey3: #393b44;
 }
 
+.BTN {
+    cursor: pointer;
+}
+
 /* Top Bar */
 
 #topBar {
     width: 100vw;
     height: 8vh;
     background: var(--darkBlue);
+    position: fixed;
+    top: 5vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    border-radius: 25px 25px 0 0;
+}
+
+#topBar .BTN {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #backBTN {
     width: 8vh;
     height: 100%;
-    background: orange;
+    /* background: orange; */
 }
 
 #menuLogo {
@@ -53,16 +73,46 @@ body {
     background: orange;
 }
 
+/* Status Bar */
+
+#statusBar {
+    width: 100vw;
+    height: 5vh;
+    background: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+}
+
+#statusBarTime {
+    color: white;
+    width: 20vw;
+    text-align: center;
+    font-weight: 500;
+}
+
+#statusBarIcons {
+    background: blueviolet;
+    width: 20vw;
+    height: 5vh;
+}
+
 /* Main Body */
 
 #bodyContainer {
     width: 100vw;
-    height: 92vh;
+    height: 95vh;
+    margin-top: 5vh;
     min-height: -webkit-fill-available;
-    background: orangered;
+    /* background: orangered; */
+    background: #dddddd;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    border-radius: 25px 25px 0 0;
 }
 
 
@@ -80,6 +130,9 @@ body {
     background: var(--lightBlue);
     z-index: 1;
     border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #buttonHolder #selectedBG {
@@ -88,4 +141,146 @@ body {
     height: 28vw;
     background: var(--grey2);
     border-radius: 15px;
+}
+
+#modeDescHolder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#modeDesc {
+    width: 80vw;
+    font-size: 4vw;
+}
+
+/* 0000 */
+
+#logoHolder0000 {
+    margin-left: 20vw;
+    width: 60vw;
+    height: 60vw;
+    background-image: url("/images/Barclays-logo-Icon.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#logoTextHolder0000 {
+    margin-left: 25vw;
+    width: 50vw;
+    height: 8vh;
+    background-image: url("/images/Barclays-logo-Text.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#loginButtonsHolder0000 {
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10vw;
+    padding-bottom: 4vw;
+}
+
+#loginButtonsHolder0000 input {
+    width: 100%;
+    margin-bottom: 3vw;
+    height: 5vh;
+    border-radius: 25px;
+    padding-left: 5vw;
+    border: 0;
+}
+
+#loginButtonsHolder0000 button {
+    width: 100%;
+    margin-bottom: 3vw;
+    height: 5vh;
+    border-radius: 25px;
+    padding-left: 5vw;
+    background: var(--lightBlue);
+    color: white;
+    font-size: 4.5vw;
+    font-weight: 600;
+    border: 0;
+}
+
+#registerBTN0000 {
+    background: white !important;
+    color: var(--lightBlue) !important;
+}
+
+#forgotPassBTN0000 {
+    color: #555;
+    font-size: 4vw;
+    text-decoration: underline;
+    margin: 0;
+}
+
+/* 0001 */
+
+#welcomeText0001 {
+    font-size: 8vw;
+    width: 100vw;
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+#accountSelectionTitle0001 {
+    font-size: 6vw;
+    font-weight: 500;
+    width: 100vw;
+    text-align: center;
+}
+
+#accountSelectionHolder0001 {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20vh;
+}
+
+.accountOption0001 {
+    width: 30vw;
+}
+
+#nAccount0001 {
+    width: 30vw;
+    height: 30vw;
+    background: var(--lightBlue);
+}
+
+#sAccount0001 {
+    width: 30vw;
+    height: 30vw;
+    background: var(--lightBlue);
+}
+
+#kAccount0001 {
+    width: 30vw;
+    height: 30vw;
+    background: var(--lightBlue);
+}
+
+.accountTitle0001 {
+    font-size: 4vw;
+    text-align: center;
+}
+
+#bottomLogo0001 {
+    width: 60vw;
+    height: 10vh;
+    position: fixed;
+    left: 20vw;
+    bottom: 2vh;
+    background-image: url(/images/Barclays-logo-Both.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
