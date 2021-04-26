@@ -410,6 +410,48 @@ body {
     margin-bottom: 2.5vw;
 }
 
+#qa-transfer0002 {
+    background-image: url("/images/qa-transferIcon.svg");
+    background-position: center;
+    background-size: 20vw;
+    background-repeat: no-repeat;
+}
+
+#qa-request0002 {
+    background-image: url("/images/qa-requestIcon.svg");
+    background-position: center;
+    background-size: 20vw;
+    background-repeat: no-repeat;
+}
+
+#qa-withdraw0002 {
+    background-image: url("/images/qa-withdrawIcon.svg");
+    background-position: center;
+    background-size: 20vw;
+    background-repeat: no-repeat;
+}
+
+#qa-payment0002 {
+    background-image: url("/images/qa-paymentsIcon.svg");
+    background-position: center;
+    background-size: 20vw;
+    background-repeat: no-repeat;
+}
+
+#qa-exchange0002 {
+    background-image: url("/images/qa-exchangeIcon.svg");
+    background-position: center;
+    background-size: 20vw;
+    background-repeat: no-repeat;
+}
+
+#qa-savings0002 {
+    background-image: url("/images/qa-savingsIcon.svg");
+    background-position: center;
+    background-size: 20vw;
+    background-repeat: no-repeat;
+}
+
 #transactionsHolder0002 {
     width: 90vw;
     height: 30vh;
