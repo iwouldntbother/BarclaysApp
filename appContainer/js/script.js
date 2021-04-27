@@ -28,3 +28,36 @@ function cardIsolation() {
         walletButtonHolders[i].style.marginTop = "60vw"
     }
 }
+
+function cardDispersion() {
+    var hider = document.getElementById("contentHider0002")
+    var walletDetailsHolder = document.getElementById("walletDetailsHolder0002")
+    var walletButtonHolders = document.getElementsByClassName("walletButton0002")
+
+    hider.style.opacity = 0;
+    walletDetailsHolder.style.top = "9.5vh"
+
+    for (var i=0; i<walletButtonHolders.length; i++) {
+        walletButtonHolders[i].style.marginTop = "0vw"
+    }
+}
+
+var walletOpen = false;
+
+function walletToggle() {
+    var hider = document.getElementById("contentHider0002")
+    var walletHolder = document.getElementById("walletHolder0002")
+
+    if (walletOpen) {
+        cardDispersion();
+        hider.style.pointerEvents = "none";
+        walletHolder.style.pointerEvents = "all";
+        walletOpen = false;
+    } else {
+        cardIsolation();
+        hider.style.pointerEvents = "all";
+        walletHolder.style.pointerEvents = "none";
+        walletOpen = true;
+    }
+
+}
