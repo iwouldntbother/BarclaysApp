@@ -15,3 +15,16 @@ function signIn(emailData, passData) {
 
     console.log("Email: "+email+"\nPass: "+pass)
 }
+
+function cardIsolation() {
+    var hider = document.getElementById("contentHider0002")
+    var walletDetailsHolder = document.getElementById("walletDetailsHolder0002")
+    var walletButtonHolders = document.getElementsByClassName("walletButton0002")
+
+    hider.style.opacity = 1;
+    walletDetailsHolder.style.top = "35vh"
+
+    for (var i=0; i<walletButtonHolders.length; i++) {
+        walletButtonHolders[i].style.marginTop = "60vw"
+    }
+}
