@@ -18,8 +18,10 @@ body {
 }
 
 :root {
-    --lightBlue: #00aeef;
-    --darkBlue: #00395d;
+    --lightBlue: #06ADEF;
+    --darkBlue: #2B3A67;
+    --orange: #FF9F1C;
+    --yellow: #FFE736;
     --grey0: #f1f3f8;
     --grey1: #d6e0f0;
     --grey2: #8d93ab;
