@@ -35,7 +35,7 @@ function cardDispersion() {
     var walletButtonHolders = document.getElementsByClassName("walletButton0002")
 
     hider.style.opacity = 0;
-    walletDetailsHolder.style.top = "9.5vh"
+    walletDetailsHolder.style.top = "6vh"
 
     for (var i=0; i<walletButtonHolders.length; i++) {
         walletButtonHolders[i].style.marginTop = "0vw"
@@ -61,3 +61,10 @@ function walletToggle() {
     }
 
 }
+
+window.addEventListener("load",function() {
+    setTimeout(function(){
+        // This hides the address bar:
+        window.scrollTo(0, 1);
+    }, 0);
+});
