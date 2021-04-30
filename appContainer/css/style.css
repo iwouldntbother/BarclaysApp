@@ -462,11 +462,11 @@ body {
 }
 
 .action0002 {
-    width: 28vw;
-    height: 28vw;
+    width: 25vw;
+    height: 25vw;
     border-radius: 25px;
     background: var(--lightBlue);
-    margin-left: 2.5vw;
+    margin-left: 5vw;
     margin-bottom: 2.5vw;
 }
 
@@ -520,7 +520,8 @@ body {
     background: white;
     border-radius: 25px;
     margin: 0 5vw;
-    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .transaction0002 {
