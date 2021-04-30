@@ -110,17 +110,21 @@ body {
 
 #bodyContainer {
     width: 100vw;
-    height: 95vh;
-    margin-top: 5vh;
+    height: 100vh;
+    /* margin-top: 5vh; */
     min-height: -webkit-fill-available;
     /* background: orangered; */
     background: #dddddd;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     border-radius: 25px 25px 0 0;
 }
 
+.section-3 {
+    height: 31vh;
+    width: 100vw;
+}
 
 #buttonHolder {
     display: flex;
@@ -336,7 +340,7 @@ body {
 #walletDetailsHolder0002 {
     width: 100vw;
     position: absolute;
-    top: 9.5vh;
+    top: 6vh;
     transition: top 0.5s;
     z-index: 100;
 }
@@ -510,7 +514,7 @@ body {
 
 #transactionsHolder0002 {
     width: 90vw;
-    height: 30vh;
+    height: 27vh;
     display: flex;
     flex-direction: column;
     background: white;
