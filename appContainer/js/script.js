@@ -9,8 +9,10 @@ function signIn(emailData, passData) {
     var email = emailData || document.getElementById("loginEmail").value
     var pass = passData || document.getElementById("loginPass").value
 
-    if (email == "" || pass =="") {
-        return
+    if (email == "") {
+        document.getElementById("loginEmail").style.border = "red solid 0.5vw"
+    } else if (pass == "") {
+        document.getElementById("loginPass").style.border = "red solid 0.5vw"
     } else {
         loadPage("0001")
     }
