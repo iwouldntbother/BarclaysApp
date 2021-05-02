@@ -1,3 +1,5 @@
+loadPage("0000")
+
 function loadPage(pageID) {
     document.getElementById("bodyContainer").innerHTML = treeData[String(pageID)]
     console.log("Loaded page: " + pageID)
@@ -10,10 +12,22 @@ function signIn(emailData, passData) {
     if (email == "" || pass =="") {
         return
     } else {
-        loadPage("0003")
+        loadPage("0001")
     }
 
     console.log("Email: "+email+"\nPass: "+pass)
+}
+
+function accountSelection(type) {
+    if (type == "normal") {
+        loadPage("0002");
+    } else if (type == "simplified") {
+
+    } else if (type == "kids") {
+        loadPage("0003");
+    } else {
+        console.log("Error selection not valid")
+    }
 }
 
 function cardIsolation() {
@@ -62,9 +76,9 @@ function walletToggle() {
 
 }
 
-window.addEventListener("load",function() {
-    setTimeout(function(){
-        // This hides the address bar:
-        window.scrollTo(0, 1);
-    }, 0);
-});
+// window.addEventListener("load",function() {
+//     setTimeout(function(){
+//         // This hides the address bar:
+//         window.scrollTo(0, 1);
+//     }, 0);
+// });

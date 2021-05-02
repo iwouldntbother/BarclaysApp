@@ -26,6 +26,7 @@ html {
 
 :root {
     --lightBlue: #06ADEF;
+    --mediumBlue: #0074A7;
     --darkBlue: #2B3A67;
     --orange: #FF9F1C;
     --yellow: #FFE736;
@@ -498,8 +499,8 @@ html {
     background-repeat: no-repeat;
 }
 
-#qa-payment0002 {
-    background-image: url("/images/qa-paymentsIcon.svg");
+#qa-spendCap0002 {
+    background-image: url("/images/qa-spendCapIcon.svg");
     background-position: center;
     background-size: 20vw;
     background-repeat: no-repeat;
@@ -597,4 +598,209 @@ html {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+
+/* 0003 */
+
+#walletDetailsHolder0003 {
+    width: 100vw;
+    position: absolute;
+    top: 6vh;
+    transition: top 0.5s;
+    z-index: 100;
+}
+
+#walletHolder0003 {
+    width: 90vw;
+    height: 50vw;
+    background: var(--lightBlue);
+    margin-left: 5vw;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    background-image: url("/images/kidsCardCorner.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+#walletDetails0003 {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5vw;
+    font-weight: 500;
+    color: white;
+}
+
+#walletBalance0003 {
+    margin: 0;
+    font-size: 7vw;
+    font-weight: 500;
+    background: var(--mediumBlue);
+    padding: 0 1vw;
+    border-radius: 5vw;
+}
+
+#walletBalance0003::before {
+    content: "£";
+}
+
+#walletDetails0003 p {
+    margin: 0;
+    font-size: 3.5vw;
+}
+
+#walletOptions0003 {
+    width: 90vw;
+    margin-left: 5vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.option-1-0003 {
+    width: 47.5%;
+    height: 40%;
+    background: var(--orange);
+    border-radius: 25px;
+}
+
+.option-2-0003 {
+    width: 100%;
+    height: 40%;
+    background: var(--lightBlue);
+    border-radius: 25px;
+}
+
+#spent0003 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#spent0003 h1 {
+    font-size: 9vw;
+    margin: 0;
+}
+
+#spent0003 h1::before {
+    content: "£";
+}
+
+#spent0003 p {
+    margin: 0;
+    font-size: 3.5vw;
+    font-weight: 600;
+}
+
+#allowance0003 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#allowance0003 h1 {
+    font-size: 9vw;
+    margin: 0;
+}
+
+#allowance0003 h1::before {
+    content: "£";
+}
+
+#allowance0003 p {
+    margin: 0;
+    font-size: 3.5vw;
+    font-weight: 600;
+}
+
+#savings0003 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+    overflow: hidden;
+}
+
+#savingsIcon0003 {
+    width: 20vh;
+    height: 20vh;
+    margin-left: -10vh;
+    border-radius: 20vh;
+    background: var(--darkBlue);
+    background-image: url("/images/kids-savingsIcon.svg");
+    background-size: 8vh;
+    background-position-x: 10vh;
+    background-position-y: 6.25vh;
+    background-repeat: no-repeat;
+}
+
+#savings0003 h1 {
+    font-size: 8vw;
+    color: white;
+    font-weight: 500;
+    background: var(--mediumBlue);
+    margin: 0;
+    padding: 0 1vh;
+    border-radius: 20vh;
+}
+
+
+#barryHolder0003 {
+    width: 90vw;
+    height: 25vh;
+    display: flex;
+    flex-direction: row;
+    background: white;
+    border-radius: 25px;
+    margin: 2.5vw 5vw;
+    padding: 0 5vw;
+    overflow: hidden;
+}
+
+.barryOption0003 {
+    width: 40vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.barryOption0003 p {
+    font-size: 4vw;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 1vw;
+}
+
+.optionIcon0003 {
+    height: 16vh;
+    width: 90%;
+    background: var(--yellow);
+    background-position: center;
+    background-size: 25vw;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+}
+
+#lessonIcon0003 {
+    background-image: url("/images/lessonIcon.svg");
+}
+
+#challengesIcon0003 {
+    background-image: url("/images/challengesIcon.svg");
 }
