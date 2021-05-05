@@ -1,4 +1,4 @@
-// loadPage("0001")
+loadPage("0000")
 
 function loadPage(pageID) {
     document.getElementById("bodyContainer").innerHTML = treeData[String(pageID)]
