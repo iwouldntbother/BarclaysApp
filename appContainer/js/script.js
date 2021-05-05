@@ -1,4 +1,4 @@
-loadPage("0001")
+// loadPage("0001")
 
 function loadPage(pageID) {
     document.getElementById("bodyContainer").innerHTML = treeData[String(pageID)]
@@ -24,7 +24,7 @@ function accountSelection(type) {
     if (type == "normal") {
         loadPage("0002");
     } else if (type == "simplified") {
-
+        loadPage("0004");
     } else if (type == "kids") {
         loadPage("0003");
     } else {
@@ -84,3 +84,98 @@ function walletToggle() {
 //         window.scrollTo(0, 1);
 //     }, 0);
 // });
+
+slideUpOpen = false;
+
+function preLoadSlideUp(page) {
+    var slideUpHolder = document.getElementById("slideUpHolder")
+
+    if (page == "settings") {
+        // load Settings page
+    } else if (page == "contacts") {
+        // load contacts page
+    } else if (page == "stats") {
+        // load stats page
+    } else {
+        console.log("PreLoad failed: Page not recognised!")
+    }
+
+}
+
+function loadSlideUp(page) {
+    var slideUpHolder = document.getElementById("slideUpHolder")
+    var slideUpContainer = document.getElementById("slideUpContainer")
+
+    if (slideUpOpen) {
+        slideUpHolder.style.top = "100vh";
+        preLoadSlideUp(page);
+        slideUpHolder.style.top = "5vh";
+        slideUpContainer.style.pointerEvents = "all";
+        slideUpOpen = true;
+    } else {
+        slideUpHolder.style.top = "5vh";
+        slideUpContainer.style.pointerEvents = "all";
+        slideUpOpen = true;
+    }
+}
+
+// Slide Up Handle
+
+// var posY1 = 0;
+// var posY2 = 0;
+// var posInitial;
+// var posFinal;
+// var threshold = 10;
+// var handle = document.getElementsByClassName("handle")[0];
+// var slideUpHolder = document.getElementById("slideUpHolder");
+// // Mouse events
+// handle.onmousedown = dragStart;
+  
+// // Touch events
+// handle.addEventListener('touchstart', dragStart);
+// handle.addEventListener('touchend', dragEnd);
+// handle.addEventListener('touchmove', dragAction);
+
+
+// function dragStart (e) {
+//     e = e || window.event;
+//     e.preventDefault();
+//     posInitial = slideUpHolder.offsetTop;
+//     console.log(posInitial)
+    
+//     if (e.type == 'touchstart') {
+//       posY1 = e.touches[0].clientY;
+//     } else {
+//       posY1 = e.clientY;
+//       document.onmouseup = dragEnd;
+//       document.onmousemove = dragAction;
+//     }
+//   }
+
+//   function dragAction (e) {
+//     e = e || window.event;
+    
+//     if (e.type == 'touchmove') {
+//       posY2 = posY1 - e.touches[0].clientY;
+//       posY1 = e.touches[0].clientY;
+//     } else {
+//       posY2 = posY1 - e.clientY;
+//       posY1 = e.clientY;
+//     }
+//     slideUpHolder.style.top = (slideUpHolder.offsetTop - posY2) + "px";
+//     console.log((slideUpHolder.offsetTop - posY2) + "px")
+//   }
+  
+//   function dragEnd (e) {
+//     console.log("Drag End")
+//     posFinal = slideUpHolder.offsetTop;
+//     console.log(posFinal - posInitial)
+//     if (posFinal - posInitial > threshold) {
+//         slideUpHolder.style.top = "100vh";
+//     } else {
+//         slideUpHolder.style.top = (posInitial) + "px";
+//     }
+
+//     document.onmouseup = null;
+//     document.onmousemove = null;
+//   }

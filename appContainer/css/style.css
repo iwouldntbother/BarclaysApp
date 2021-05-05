@@ -114,6 +114,33 @@ html {
     background-size: contain;
 }
 
+/* Slide Up Container */
+
+#slideUpContainer {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+#slideUpHolder {
+    width: 100vw;
+    height: 95vh;
+    position: relative;
+    top: 100vh;
+    transition: top 0.5s ease-out;
+    background: var(--lightBlue);
+}
+
+#slideUpHandle {
+    width: 100vw;
+    height: 5vh;
+    background: var(--grey2);
+}
+
 /* Main Body */
 
 #bodyContainer {
@@ -820,4 +847,311 @@ html {
 
 #challengesIcon0003 {
     background-image: url("/images/challengesIcon.svg");
+}
+
+/* 0004 */
+
+.section-3 {
+    height: 40vh;
+    width: 100vw;
+}
+
+.section-5 {
+    height: 60vh;
+    width: 100vw;
+}
+
+.title0004 {
+    font-size: 8vw;
+    margin: 0;
+    margin-left: 5vw;
+}
+
+#contentHider0004 {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #dddddd;
+    opacity: 0;
+    transition: opacity 1s;
+    pointer-events: none;
+}
+
+#walletSpacer0004 {
+    width: 90vw;
+    height: 50vw;
+    margin-left: 5vw;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#walletHolder0004 {
+    width: 90vw;
+    height: 50vw;
+    background: linear-gradient(90deg, rgba(0,72,255,1) 0%, rgba(0,174,239,1) 100%);
+    margin-left: 5vw;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
+
+#walletDetailsHolder0004 {
+    width: 100vw;
+    position: absolute;
+    top: 6vh;
+    transition: top 0.5s;
+    z-index: 100;
+}
+
+#walletButtonHolder0004 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 80vw;
+    margin-left: 10vw;
+}
+
+.walletButton0004 {
+    width: 15vw;
+    height: 15vw;
+    background: var(--lightBlue);
+    border-radius: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: margin-top 0.25s;
+    background-size: 10vw;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#walletLogoBar0004 {
+    width: 90vw;
+    height: 15vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#barclaysLogo0004 {
+    width: 11vw;
+    height: 11vw;
+    margin: 2vw;
+    background-image: url("/images/Barclays-logo-Icon-white.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#visaLogo0004 {
+    width: 18vw;
+    height: 13vw;
+    margin: 5vw;
+    background-image: url("/images/Visa_logo.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#walletBalance0004 {
+    font-size: 8vw;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+    margin-top: 2vh;
+}
+
+#walletBalance0004::before {
+    content: "£";
+}
+
+#walletDetails0004 {
+    width: 40vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 3.5vw;
+    font-weight: 500;
+    color: white;
+}
+
+#cardNo0004::before {
+    content: "...";
+}
+
+#expDate0004::before {
+    content: "EXP. ";
+}
+
+#actionsTitle0004 {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-right: 5vw;
+}
+
+.titleBTN0004 {
+    color: var(--lightBlue);
+    margin: 0;
+    font-size: 3.5vw;
+    font-weight: 500;
+}
+
+#actionsHolder0004 {
+    width: 100vw;
+    max-height: 50vh;
+    padding-left: 2.5vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.action0004 {
+    width: 43.75vw;
+    height: 35vw;
+    border-radius: 25px;
+    background: var(--lightBlue);
+    margin-left: 2.5vw;
+    margin-bottom: 2.5vw;
+}
+
+#qa-transfer0004 {
+    background-image: url("/images/qa-transferIcon.svg");
+    background-position: center;
+    background-size: 25vw;
+    background-repeat: no-repeat;
+}
+
+#qa-request0004 {
+    background-image: url("/images/qa-requestIcon.svg");
+    background-position: center;
+    background-size: 25vw;
+    background-repeat: no-repeat;
+}
+
+#qa-withdraw0004 {
+    background-image: url("/images/qa-withdrawIcon.svg");
+    background-position: center;
+    background-size: 25vw;
+    background-repeat: no-repeat;
+}
+
+#qa-spendCap0004 {
+    background-image: url("/images/qa-spendCapIcon.svg");
+    background-position: center;
+    background-size: 25vw;
+    background-repeat: no-repeat;
+}
+
+#qa-exchange0004 {
+    background-image: url("/images/qa-exchangeIcon.svg");
+    background-position: center;
+    background-size: 25vw;
+    background-repeat: no-repeat;
+}
+
+#qa-savings0004 {
+    background-image: url("/images/qa-savingsIcon.svg");
+    background-position: center;
+    background-size: 27vw;
+    background-repeat: no-repeat;
+}
+
+#transactionsHolder0004 {
+    width: 90vw;
+    height: 27vh;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 25px;
+    margin: 0 5vw;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.transaction0004 {
+    width: 90vw;
+    height: 10vw;
+    /* background: var(--lightBlue); */
+    padding: 0 7vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #ddd solid 0.2vh;
+}
+
+.transactionName0004 {
+    font-size: 3.5vw;
+    margin: 0;
+    font-weight: 600;
+}
+
+.transactionDate0004 {
+    font-size: 2.5vw;
+    margin: 0;
+    font-weight: 500;
+}
+
+.transactionAmount0004 {
+    font-size: 4vw;
+    margin: 0;
+    font-weight: 600;
+}
+
+#tabBarHolder0004 {
+    width: 90vw;
+    height: 8vh;
+    margin-left: 5vw;
+    /* background: var(--lightBlue); */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#contactsBTN0004 {
+    width: 16vw;
+    height: 16vw;
+    padding: 2vw;
+    border-radius: 8vw;
+    background-color: var(--orange);
+    background-image: url("/images/contactsIcon.svg");
+    background-position: center;
+    background-size: 9vw;
+    background-repeat: no-repeat;
+}
+
+#analyticsBTN0004 {
+    width: 16vw;
+    height: 16vw;
+    padding: 2vw;
+    border-radius: 8vw;
+    background-color: var(--orange);
+    background-image: url("/images/analyticsIcon.svg");
+    background-position: center;
+    background-size: 9vw;
+    background-repeat: no-repeat;
+}
+
+#settingsBTN0004 {
+    width: 16vw;
+    height: 16vw;
+    padding: 2vw;
+    border-radius: 8vw;
+    background-color: var(--orange);
+    background-image: url("/images/settingsIcon.svg");
+    background-position: center;
+    background-size: 9vw;
+    background-repeat: no-repeat;
 }
